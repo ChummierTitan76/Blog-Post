@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>My Blog Posts</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="nav section flex">
+        <a href="index.html">Home</a> |
+        <a href="blog.html">Blog Posts</a> |
+        <a href="signup_form.html" class="active-link">Signup</a>
+    </nav>
+    
+    <!-- Header Section -->
+    <header class="header section flex">
+        <h1>Join The Community</h1>
+        <p class="sub-heading">Express Yourself</p>
+    </header>
+    
+    <!-- Form Layout -->
+    <main class="main-content">
+        <div class="welcome section flex">
+            <form class="signup">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name:" minlength="1" maxlength="20"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name:" minlength="1" maxlength="20">
+                <label for="nname">Nickname:</label><br>
+                <input type="text" id="nname" name="nname" placeholder="Nickname:" minlength="1" maxlength="20"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email:" minlength="1" maxlength="20" required>
+                <label for="profession">Profession:</label><br>
+                <input type="text" id="profession" name="profession" placeholder="Current Profession:" minlength="1" maxlength="25">
+                <input type="submit">   
+            </form>
+         
+        </div>
+    </main>
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar section flex">
+        <nav class="sub-nav">
+            <a href="/blog-posts/post_one.html" class="button-link">January 1st, 2023</a>
+            <a href="/blog-posts/post_two.html" class="button-link">January 15th, 2023</a>
+            <a href="/blog-posts/post_three.html" class="button-link">January 17th, 2023</a>
+            <a href="/blog-posts/post_four.html" class="button-link">January 20th, 2023</a>
+            <a href="/blog-posts/post_five.html" class="button-link">January 24th, 2023</a>
+        </nav>
+    </div>
+      
+    
+    <!-- Footer Section -->
+    <footer class="footer section flex">
+        <p class="footer-text">Copyright David Brown 2023.</p>
+    </footer>
+</body>
+</html>
