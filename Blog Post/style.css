@@ -421,8 +421,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: auto;
+    text-align: center;
     min-width: 90%;
-    max-width: 90%;
+    max-width: 100%;
     min-height: 100%;
     max-height: 100%;
     padding: 1.5em;
@@ -430,11 +431,10 @@ body {
     background-color: #FFFAFA;
     border-radius: 5px;
     color: black;
-    line-height: 1.1;
+    line-height: .9;
     
 }
 
 .full-post {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    align-self: center;
 }
