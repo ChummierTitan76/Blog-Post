@@ -1,3 +1,6 @@
+/* AUTHOR: David J. Brown
+          August 2023    */
+
 /* COLOR PALETTE */
 /* EEF2EA - Cream White
 #F4F5F2 - Lighter Cream
@@ -12,21 +15,14 @@ font-family: 'Lily Script One', cursive; */
 
 
 /* Styling for Signup Sheet Form */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
-
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: .5em;
+    margin-bottom: .5em;
     resize: vertical;
   }
 
@@ -36,8 +32,8 @@ input[type=text], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: .5em;
+    margin-bottom: .5em;
     resize: vertical;
   }
   
@@ -48,10 +44,22 @@ input[type=text], select, textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: .5em;
+    transition: all 1000ms ease;
   }
   
   input[type=submit]:hover {
-    background-color: #A24254;
+    background-color: #A24254;  
   }
   
-  
+  .signup {
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: #EEF2EA;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .small-print {
+    font-size: .5em;
+  }
