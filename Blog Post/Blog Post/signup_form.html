@@ -1,0 +1,72 @@
+<!-- AUTHOR: DAVID J. BROWN -->
+<!--       August 2023      -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form_style.css">
+    <link rel="stylesheet" href="author_info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <title>My Blog Posts</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="nav section flex">
+        <a href="index.html">Home</a> |
+        <a href="blog.html">Blog Posts</a> |
+        <a href="signup_form.html" class="active-link">Signup</a>
+    </nav>
+    
+    <!-- Header Section -->
+    <header class="header section flex">
+        <h1>Join The Community</h1>
+        <p class="sub-heading">Express Yourself</p>
+    </header>
+    
+    <!-- Form Layout -->
+    <main class="main-content">
+        <div class="welcome section flex author-section">
+            <h2 class="signup-cta">Fill out the form below!<br>Get started making great content!</h2>
+            <form class="signup">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name:" minlength="1" maxlength="20"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name:" minlength="1" maxlength="20">
+                <label for="nname">Nickname:</label><br>
+                <input type="text" id="nname" name="nname" placeholder="Nickname:" minlength="1" maxlength="20"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email:" minlength="1" maxlength="20" required>
+                <label for="profession">Profession:</label><br>
+                <input type="text" id="profession" name="profession" placeholder="Current Profession:" minlength="1" maxlength="25">
+                <input type="submit"> 
+                <p class="small-print">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi tenetur ab quasi et delectus.</p>  
+            </form>
+         </div>
+    </main>
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar section flex">
+        <div class="author-info">
+            <img src="assets/selfie.jpeg" class="about-photo" alt="Photo of author outside a famous home" width="auto">
+        </div>
+        <!-- About the Author Section Instead of Blog Links -->
+        <h2 class="sidebar-title">About the Author</h2>
+        <p class="author-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis veniam architecto minima?
+             Eligendi expedita suscipit error minus eos sint. Nemo quis iusto consequatur totam.</p>    
+    </div>
+      
+    
+    <!-- Footer Section -->
+    <footer class="footer section flex">
+        <p class="footer-text">Copyright David Brown 2023.</p>
+    </footer>
+</body>
+</html>
