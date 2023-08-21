@@ -1,0 +1,40 @@
+.author-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.author-info {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 100;
+    padding: 1em;
+}
+
+.about-photo {
+    opacity: 1;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    padding-top: .5em;
+    transition: all 3000ms ease;
+    overflow: hidden;
+}
+
+.about-photo:hover {
+    opacity: .6;
+    padding-top: .5;
+    transition-duration: 3000ms;  
+    transition: all 3000ms ease; 
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.about-photo:after {
+    opacity: .8;
+    
+}

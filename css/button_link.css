@@ -1,0 +1,35 @@
+/* Styling For Links That Will Serve As Buttons */
+.button-link {
+    background-color: #2A3041;
+    padding: .5em;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    opacity: .8;
+    transition-duration: 1000ms;
+    transition: all 1500ms ease;
+}
+
+.button-link:visited {
+    color: white;
+    font-weight: bold;
+}
+
+.button-link:active {
+    color: white;
+    font-weight: bold;
+    background-color: #A24254;
+    opacity: 1;
+    transition-duration: 1000ms;
+}
+
+.button-link:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #A24254;
+    transform: scale(1.21);
+    opacity:1.0;
+    transition-duration: 500ms;
+}

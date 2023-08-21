@@ -1,13 +1,11 @@
 <!-- AUTHOR: DAVID J. BROWN -->
+<!-- UDACITY FEND NANODEGREE -->
 <!--       August 2023      -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form_style.css">
-    <link rel="stylesheet" href="author_info.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/author_info.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
@@ -32,6 +30,7 @@
     </header>
     
     <!-- Form Layout -->
+    <!-- *CITATION* Used Form Layout As Detailed By w3Schools.com -->
     <main class="main-content">
         <div class="welcome section flex author-section">
             <h2 class="signup-cta">Fill out the form below!<br>Get started making great content!</h2>
@@ -47,7 +46,7 @@
                 <label for="profession">Profession:</label><br>
                 <input type="text" id="profession" name="profession" placeholder="Current Profession:" minlength="1" maxlength="25">
                 <input type="submit"> 
-                <p class="small-print">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi tenetur ab quasi et delectus.</p>  
+                <p class="small-print"><em>*We don't believe in inundating your inbox with junk messages. All correspondence will be sent only if necessary and users may opt out whenever they wish.</em></p>  
             </form>
          </div>
     </main>
@@ -55,18 +54,28 @@
     <!-- Left Sidebar -->
     <div class="left-sidebar section flex">
         <div class="author-info">
-            <img src="assets/selfie.jpeg" class="about-photo" alt="Photo of author outside a famous home" width="auto">
+            <img src="assets/selfie.jpeg" class="about-photo" alt="Photo of author outside a famous home">
+            <figcaption><em>Photo Of the Author outside the Hemmingway House in Key West, Fl.</em></figcaption>
         </div>
         <!-- About the Author Section Instead of Blog Links -->
         <h2 class="sidebar-title">About the Author</h2>
-        <p class="author-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veritatis veniam architecto minima?
-             Eligendi expedita suscipit error minus eos sint. Nemo quis iusto consequatur totam.</p>    
+        <p class="author-info">David Brown is an IT Technician and Front End Web Developer working in the South Florida area. He enjoys art and movies - plays guitar in a local rock band, and lives in Pompano Beach with his loving wife and beautiful daughter.
+             He spends most of his free time coding, fishing, riding motorcycles, and generally appreciating the world and everything it has to offer.</p>    
     </div>
       
     
     <!-- Footer Section -->
     <footer class="footer section flex">
-        <p class="footer-text">Copyright David Brown 2023.</p>
+        <div class="copyright">
+            <p class="footer-text">Copyright David Brown 2023.</p>
+        </div>
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="404.html"><img class="favicon" src="assets/icons/li_logo.svg" width="25"></a>
+        <a href="404.html"></a><img class="favicon" src="assets/icons/ig_logo.svg" width="25"></a>
+        <a href="404.html"></a><img class="favicon" src="assets/icons/fb_logo.ico" width="25"></a>
+        <a href="404.html"></a><img class="favicon" src="assets/icons/git_logo.svg" width="25"></a>
+     </div>
     </footer>
 </body>
 </html>
