@@ -13,10 +13,32 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Lily Script One', cursive; */
 
+/* Import Form Styling On Join Page */
+@import url("form_style.css");
+
+/* Import Sub-Nav Menu on Left sidebar */
+@import url("sub_nav.css");
+
+/* Import Button Styling */
+@import url("button_link.css");
+
 
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none; 
+    color   
+}
+
+a:visited {
+    color: black;
+}
+
+a::after {
+    color: black;
 }
 
 h1 {
@@ -41,45 +63,6 @@ h1 {
     box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
     align-items: center;
 }
-
-/* Styling For Links That Will Serve As Buttons */
-.button-link {
-    background-color: #2A3041;
-    padding: .5em;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-    opacity: .8;
-    transition-duration: 1000ms;
-    transition: all 1500ms ease;
-
-    
-}
-
-.button-link:visited {
-    color: white;
-    font-weight: bold;
-}
-
-.button-link:active {
-    color: white;
-    font-weight: bold;
-    background-color: #A24254;
-    opacity: 1;
-    transition-duration: 1000ms;
-}
-
-.button-link:hover {
-    color: white;
-    font-weight: bold;
-    background-color: #A24254;
-    transform: scale(1.21);
-    opacity:1.0;
-    transition-duration: 500ms;
-}
-
 /* GLOBAL Body Styling */
 body {
     min-width: 100vw;
@@ -209,6 +192,7 @@ body {
     min-width: 50%;
     max-width: 85%;
     transition: all 3000ms ease;
+    border-radius: 5px;
 }
 
 .hero-image:hover {
@@ -220,7 +204,7 @@ body {
     max-width: 85%;
     transform: scale(1.2);
     transition-duration: 3000ms;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     overflow: hidden;
 }
 
@@ -239,6 +223,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
+    text-decoration: none;
 }
 
 /* LEFT NAV Styling */
@@ -250,20 +235,20 @@ body {
     grid-row-end: 4;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: #2A3041;
     color: white;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
-    max-height: 100vh;
-    min-width: 95%;
+    /* max-height: 100vh; */
+    max-width: 95%;
     gap: .1rem;
 }
 
 .left-sidebar h2, h3, h4 {
     margin: .5em;
+    text-align: center;
 }
 
 .sidebar-title {
@@ -273,6 +258,7 @@ body {
 /* Individual Post Slide */
 .post-slide {
     /* border: 1px solid blue; */
+    font-size: .8em;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -281,13 +267,13 @@ body {
     flex-basis: auto;
     min-width: 40%;
     max-width: 100%;
-    min-height: 90%;
-    max-height: 100%;
+    /* min-height: 90%;
+    max-height: 100%; */
     margin-top: .5em;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: -20px;
-    padding: .6;
+    /* margin-bottom: -10px; */
+    padding: .5em;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
     background-color: #FFFAFA;
     border-radius: 5px;
@@ -303,7 +289,6 @@ body {
     .post-slide:hover {
         /* border: 1px solid blue; */
         opacity:1.0;
-        transition-duration: 1000ms;
         text-align: justify;
         align-items: center;
         justify-content: center;
@@ -311,18 +296,22 @@ body {
         flex-direction: column;
         flex-basis: auto;
         width: 90%;
-        margin-top: 1em;
+        margin-top: .5em;
+        margin-left: 0;
+        margin-right: 0;
+        /* margin-bottom: px; */
         padding: .5em;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
         background-color: #FFFAFA;
         border-radius: 5px;
         color: black;
         overflow: hidden;
+        transform: scale(1);
+        transition: all 2000ms ease;
     }
     .post-slide:visited {
         /* border: 1px solid blue; */
         opacity:.9;
-        transition-duration: 1000ms;
         text-align: justify;
         align-items: center;
         justify-content: center;
@@ -330,7 +319,10 @@ body {
         flex-direction: column;
         flex-basis: auto;
         width: 90%;
-        margin-top: 1em;
+        margin-top: .5em;
+        margin-left: 0;
+        margin-right: 0;
+        /* margin-bottom: -10px; */
         padding: .5em;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
         background-color: #FFFAFA;
@@ -367,7 +359,7 @@ body {
 /* Styling for Text On Individual Post Pages */
 .post-title {
     font-family: 'Lily Script One', cursive;
-    font-size: 2.1em;
+    font-size: 1.5em;
     margin: -5px;
 }
 
@@ -388,42 +380,6 @@ body {
     margin: 0 auto;
 }
 
-
-/* Blog Post Sub-Nav Menu */
-.sub-nav {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    color: white;
-    gap: 1em;
-}
-
-.sub-nav a {
-    color: black;
-    border-radius: 5px;
-    background-color: #FFFAFA;
-    text-decoration: none;
-    min-width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: .5em;
-}
-
-.sub-nav a:hover {
-    color: white;
-    transition-duration: 1000ms;
-}
-
-.sub-nav a:visited {
-    color: black;
-}
-
-.sub-nav a:active {
-    color: white;
-    background-color: #A24254;;
-}
-
-
 /* FOOTER Styling */
 .footer {
     text-align: center;
@@ -436,6 +392,38 @@ body {
     color: white;
     padding: 1em;
     min-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+       "copyright social-links"; 
+    gap: 1em;
+}
+
+.footer-text {
+    opacity: .8;
+}
+
+
+
+.copyright {
+    grid-area: copyright;
+    
+}
+
+.social-links {
+    grid-area: social-links;
+    
+}
+
+.favicon {
+    opacity: .3;
+    margin: .5em;
+    transition: all 1500ms ease;
+}
+
+.favicon:hover {
+    opacity: 1;
+    transform: scale(1.5);
 }
 
 /* Individual Blog Post Page Styling */
@@ -483,3 +471,14 @@ body {
     padding-bottom: 0;
 }
 
+/* 404 Page Styling */
+.404_image {
+    padding: .5em;
+}
+
+.support_contact {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
